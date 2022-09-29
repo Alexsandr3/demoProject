@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Match Single Characters Not Specified</title>
+</head>
+<body>
+  <h1>Hi world</h1>
+  <p>This is my first project</p>
+  <script>
+let quoteSample = "3 blind mice.";
+let myRegex = /[^aeiou^0-99]/gi; // Change this line
+let result = quoteSample.match(myRegex); // Change this line
+  </script>
+</body>
+</html>
