@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Use Capture Groups to Search and Replace</title>
+</head>
+<body>
+  <h1>Hi world</h1>
+  <p>This is my first project</p>
+  <script>
+let str = "one two three";
+let fixRegex = /(\w+) (\w+) (\w+)/g; // Change this line
+let replaceText = "$3 $2 $1"; // Change this line
+let result = str.replace(fixRegex, replaceText);
+  </script>
+</body>
+</html>
