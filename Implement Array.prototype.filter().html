@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Implement Array.prototype.filter()</title>
+</head>
+<body>
+  <h1>Hi world</h1>
+  <p>This is my first project</p>
+  <script>
+Array.prototype.filter = function (func) {
+  let len = this.length,
+      res = new Array(),
+      arr = this, counter=0, index = 0;
+  for(counter; counter < len; counter++)
+    if(func(arr[counter]))
+       res[index++] = arr[counter];
+    
+  return res
+}
+
+  </script>
+</body>
+</html>
