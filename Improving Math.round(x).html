@@ -2,13 +2,15 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Improving Math.round(x)</title>
+  <title>Invalid Login - Bug Fixing #11</title>
 </head>
 <body>
   <h1>Hi world</h1>
   <p>This is my first project</p>
   <script>
-const sum = 20 + 0;
+Math.roundTo = function (number, precision) {
+ return +(number).toFixed(precision)
+}
   </script>
 </body>
 </html>
