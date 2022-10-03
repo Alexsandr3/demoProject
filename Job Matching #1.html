@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Job Matching #1</title>
+</head>
+<body>
+  <h1>Hi world</h1>
+  <p>This is my first project</p>
+  <script>
+    function match(candidate, job) {
+if (!candidate.minSalary || !job.maxSalary) throw "Invalid Job or Candidate";
+  return job.maxSalary >= candidate.minSalary * 0.9;
+}
+  </script>
+</body>
+</html>
