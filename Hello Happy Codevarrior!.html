@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Hello Happy Codevarrior!</title>
+</head>
+<body>
+  <h1>Hi world</h1>
+  <p>This is my first project</p>
+  <script>
+function Warrior(n){
+  var name = n;  
+  this.name = function(n){
+    if( n ) name=n;
+    return name;
+  }
+}
+  
+Warrior.prototype.toString = function(){
+    return "Hi! my name's "+this.name();
+}
+  </script>
+</body>
+</html>
