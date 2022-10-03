@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Do something "n.times" (Simplifying "for" loops)</title>
+</head>
+<body>
+  <h1>Hi world</h1>
+  <p>This is my first project</p>
+  <script>
+    Number.prototype.times = function (f) {
+ for (let i = 0; i < this; i++) f(i)
+}
+  </script>
+</body>
+</html>
